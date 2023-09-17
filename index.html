@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ogrenci-otomasyonu</title>
+</head>
+<body>
+    <h1>Öğrenci Otomasyonu</h1>
+    
+    <!-- Öğrenci Listesi -->
+    <table id="ogrenciTablosu">
+        <thead>
+            <tr>
+                <th>Ad Soyad</th>
+                <th>Yaş</th>
+                <th>Cinsiyet</th>
+                <th>Sil</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Öğrenci bilgileri burada olacak -->
+        </tbody>
+    </table>
+
+    <!-- Yeni Öğrenci Ekleme Formu -->
+    <h2>Yeni Öğrenci Ekle</h2>
+    <form id="ogrenciEkleFormu">
+        <label for="ad">Ad:</label>
+        <input type="text" id="ad" required><br>
+
+        <label for="soyad">Soyad:</label>
+        <input type="text" id="soyad" required><br>
+
+        <label for="yas">Yaş:</label>
+        <input type="number" id="yas" required><br>
+
+        <label for="cinsiyet">Cinsiyet:</label>
+        <select id="cinsiyet" required>
+            <option value="Erkek">Erkek</option>
+            <option value="Kadın">Kadın</option>
+        </select><br>
+
+        <button type="submit">Öğrenci Ekle</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
